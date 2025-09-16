@@ -2,19 +2,55 @@
 /*.attribution { font-size: 11px; text-align: center; }*/
 /*.attribution a { color: hsl(228, 45%, 44%); }*/
 
+/* Layouts */
+/* The designs were created to the following widths: */
+/* Mobile: 375px */
+/* Desktop: 1440px */
+/* > 💡 These are just the design sizes. Ensure content is responsive and meets WCAG requirements by testing the full range of screen sizes from 320px to large screens. */
+
+/*TODO*/
+/*font*/
+/*font-family: Outfit*/
+/*font weight: 400, 700*/
+
 :root {
   --slate-300: #D5E1EF;
   --slate-500: #68778D;
   --slate-900: #1F314F;
+  --card-radius: 20px;
 }
 
 body {
   margin:0;
   padding:0;
-  background:
+  background: var(--slate-300);
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items:center;
 }
 
 .card {
-  width: 500px;
-  height 
+  background: #fff;
+  height: 500px;
+  width: 320px;
+  border-radius: var(--card-radius);
+
+  > img {
+    margin: 15px;
+    width: 290px;
+    height: 290px;
+    border-radius: calc(var(--card-radius) / 2);
+  }
+  
+  > header, > p {
+    border: 1px solid red;
+    text-align: center;
+    margin: 14px 36px;
+  }
+
+  > header {
+    font-size: 22px;
+  }
 }
