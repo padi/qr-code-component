@@ -22,7 +22,7 @@ body {
 
 .card {
   background: var(--card-color);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 19px 38px, rgba(0, 0, 0, 0.1) 0px 15px 12px;
+  box-shadow: 0 25px 25px 0 hsla(0, 0%, 0%, .0477);
   height: 500px;
   width: 320px;
   border-radius: var(--card-radius);
