@@ -3,6 +3,8 @@
   --slate-500: #68778D;
   --slate-900: #1F314F;
   --card-radius: 20px;
+  --font-bold: 700;
+  --font-regular: 300;
 }
 
 body {
@@ -23,25 +25,34 @@ body {
   width: 320px;
   border-radius: var(--card-radius);
 
-  > img {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  img.qr-code {
     margin: 15px;
     width: 290px;
     height: 290px;
     border-radius: calc(var(--card-radius) / 2);
   }
-  
-  > header, > p {
+
+  header, p {
     text-align: center;
-    margin: 14px 36px;
+    margin-top: 5px;
+    margin-bottom: 14px;
   }
 
-  > header {
-    font-weight: 700;
-    font-size: 21px;
+  header {
+    font-weight: var(--font-bold);
+    font-size: 22px;
     color: var(--slate-900);
   }
-  > p {
-    font-weight: 200;
+  p {
+    font-weight: var(--font-regular);
     color: var(--slate-500);
+  }
+
+  .instructions {
+    width: 264px;
   }
 }
