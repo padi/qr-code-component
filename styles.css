@@ -2,6 +2,7 @@
   --slate-300: #D5E1EF;
   --slate-500: #68778D;
   --slate-900: #1F314F;
+  --card-color: #FFF;
   --card-radius: 20px;
   --font-bold: 700;
   --font-regular: 300;
@@ -11,7 +12,7 @@ body {
   margin:0;
   padding:0;
   background: var(--slate-300);
-  font-family: Outfit;
+  font-family: Outfit, sans-serif;
   font-size: 15px;
   display: flex;
   justify-content: center;
@@ -20,7 +21,7 @@ body {
 }
 
 .card {
-  background: #fff;
+  background: var(--card-color);
   height: 500px;
   width: 320px;
   border-radius: var(--card-radius);
@@ -36,13 +37,13 @@ body {
     border-radius: calc(var(--card-radius) / 2);
   }
 
-  header, p {
+  h1, p {
     text-align: center;
     margin-top: 5px;
     margin-bottom: 14px;
   }
 
-  header {
+  h1 {
     font-weight: var(--font-bold);
     font-size: 22px;
     color: var(--slate-900);
